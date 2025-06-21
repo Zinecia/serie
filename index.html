@@ -99,7 +99,7 @@
     <!-- Sidebar Menu -->
     <aside id="sidebar" class="fixed top-0 left-0 w-64 h-full z-50 transform -translate-x-full transition-transform duration-300">
       <div class="flex justify-between items-center p-4 border-b border-gray-700">
-        <h2 class="text-lg font-semibold text-yellow-400">Menú</h2>
+        <h2 class="text-lg font-semibold text-yellow-400">MenÃº</h2>
         <button onclick="toggleSidebar(false)" class="text-white text-xl">
           <i class="fas fa-times"></i>
         </button>
@@ -107,7 +107,7 @@
       <nav class="flex flex-col space-y-4 p-4 flex-grow">
         <a href="https://zinecia.github.io/Home">Regresar</a>
         <a href="https://zinecia.github.io/Buscador/">Buscar</a>
-        <a href="https://zinecia.github.io/Movie">Películas</a>
+        <a href="https://zinecia.github.io/Movie">PelÃ­culas</a>
         <a href="https://zinecia.github.io/Favoritos/">Favoritos</a>
         <a href="https://cuentaappcreator.github.io/streaming/">Streaming</a>
       </nav>
@@ -116,9 +116,9 @@
         <button
           onclick="toggleSidebar(false)"
           class="w-full bg-blue-700 hover:bg-blue-800 text-white font-semibold py-2 rounded"
-          aria-label="Cerrar menú"
+          aria-label="Cerrar menÃº"
         >
-          Cerrar menú
+          Cerrar menÃº
         </button>
       </div>
     </aside>
@@ -143,6 +143,25 @@
       <div class="grid grid-cols-3 sm:grid-cols-[repeat(auto-fit,_minmax(140px,_1fr))] gap-4 mt-3">
         <!--PEGAR CONTENIDO AQUI ABAJO-->
 <!--INICIO-->
+<a href="https://Zinecia.github.io/contenido122/index.html"> 
+  <article class="flex flex-col items-center">
+    <div class="relative w-full">
+      <img
+        src="https://image.tmdb.org/t/p/w500/474kBht8w1y0HFKbfwk7FX1MKoh.jpg"
+        alt="Poster"
+        class="w-full rounded-sm object-cover"
+      />
+      <span class="absolute top-1 left-1 bg-blue-700 text-xs px-2 rounded-full font-semibold select-none">
+        SERIE
+      </span>
+    </div>
+    <p class="mt-1 text-center text-xs font-semibold leading-tight line-clamp-2">
+      Dulce hogar
+    </p>
+  </article>
+</a>
+<!--FINAL-->
+<!--INICIO-->
 <a href="https://Zinecia.github.io/contenido121/index.html"> 
   <article class="flex flex-col items-center">
     <div class="relative w-full">
@@ -156,7 +175,7 @@
       </span>
     </div>
     <p class="mt-1 text-center text-xs font-semibold leading-tight line-clamp-2">
-      Nadie nos va a extra�ar
+      Nadie nos va a extrañar
     </p>
   </article>
 </a>
@@ -429,7 +448,7 @@
         function limpiarTextoRoto(texto) {
           try {
             let limpio = decodeURIComponent(escape(texto));
-            limpio = limpio.replace(/[^a-zA-Z0-9áéíóúüñÁÉÍÓÚÜÑ¡!¿?.,:;()\[\]{}<>«»"'°\-\s]/g, "");
+            limpio = limpio.replace(/[^a-zA-Z0-9Ã¡Ã©Ã­Ã³ÃºÃ¼Ã±ÃÃÃÃÃÃÃÂ¡!Â¿?.,:;()\[\]{}<>Â«Â»"'Â°\-\s]/g, "");
             return limpio;
           } catch (e) {
             return texto;
